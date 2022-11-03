@@ -23,7 +23,7 @@ const App = () => {
       <Filter />
     
       {isLoading && !error && <p>Loading contacts...</p>}
-      {!isLoading && <ContactList />}
+      <ContactList />
     </div>
 }
 
