@@ -25,7 +25,7 @@ const App = () => {
     
       {isLoading && <p>Loading contacts...</p>}
       {error && <p>{error}</p>}
-      {!isLoading && items.length > 0 && !error && <ContactList />}
+      {!isLoading && items?.length > 0 && !error && <ContactList />}
     </div>
 }
 
