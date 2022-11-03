@@ -23,9 +23,8 @@ const App = () => {
       <h2 className={css.title}>Contacts</h2>
       <Filter />
     
-      {isLoading && <p>Loading contacts...</p>}
-      {error && <p>{error}</p>}
-      {!isLoading && items.length > 0 && !error && <ContactList />}
+      {isLoading && !error && <p>Loading contacts...</p>}
+      {!isLoading && <ContactList />}
     </div>
 }
 
