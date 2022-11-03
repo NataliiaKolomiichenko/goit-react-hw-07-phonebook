@@ -9,6 +9,7 @@ const contactsInitialState = {
 
 const handlePending = state => {
     state.isLoading = true;
+    state.items = []
 };
 
 const handleRejected = (state, action) => {
